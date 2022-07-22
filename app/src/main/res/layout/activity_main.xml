@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="My Task"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif"
             android:textSize="40sp"
             android:textColor="@color/white"    />
 
@@ -33,6 +33,7 @@
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:text="X"  />
+
     </LinearLayout>
 
     <FrameLayout
@@ -41,24 +42,19 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
+            tools:listitem="@layout/view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/view">
-
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="match_parent" />
 
         <Button
             android:id="@+id/add"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="25dp"
             android:background="@drawable/custom_button"
             android:text="+"
             android:textColor="@color/white"
-            android:layout_marginBottom="25dp"
-            android:layout_gravity="center|bottom"/>
-
+            android:textSize="25sp" />
     </FrameLayout>
-
-
-
 </LinearLayout>
